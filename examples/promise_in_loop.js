@@ -14,12 +14,7 @@ const promiseFun1 = (callback) => {
     })
 }
 const randomInt = (range) => (parseInt((Math.random() * 1e15)) % range)
-// for(var i = 0; i < 10; i++)
-//     console.log(randomInt(4))
-// asyncFun10( (val) => console.log(val))
-// promiseFun1(asyncFun1000).then( x => console.log(x))
-// promiseFun1(asyncFun2000).then( x => console.log(x))
-// promiseFun1(asyncFun3000).then( x => console.log(x))
+
 
 const callbacks = [
     asyncFun1000,
@@ -45,46 +40,7 @@ for(var i = 0; i< 10; i++){
         }) )
     
 }
-// var testPromise = [
-//     promiseFun1(asyncFun1000),
-//     promiseFun1(asyncFun2000),
-//     promiseFun1(asyncFun3000),
-// ]
 
-// console.log(testPromise)
 console.log(promiseAll)
-// Promise.all(testPromise).then( x => console.log(x))
 
 Promise.all(promiseAll).then( x => console.log(x, documents))
-
-
-// console.log(promiseAll)
-// Promise.all(promiseAll, ()=>console.log("============= fianal", documents))
-// console.log(documents)
-// const delayFun1 = (val) => new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//         console.log("value=====>", val)
-//         resolve("immdeiateFun1")
-//     }, 20)
-// })
-
-// const delayFun2 = (val) => new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//         console.log("value=====>", val)
-//         resolve("immdeiateFun2")
-//     }, 20)
-// })
-//     // const delayFun2 =  (val) => new Promise((resolve, reject) => {setTimeout(() => 
-//     //     console.log("val", val) resolve("immdeiateFun2")}, 1))
-//     // delayFun()
-// promiseGet(`${url}/posts/1`)
-//     .then(({ userId }) => promiseGet(`${url}/users/${userId}`))
-//     .then(userInfo => console.log(userInfo))
-//     .then( delayFun1 )
-//     .then( delayFun2 )
-//     // .then( delayFun1 )
-//     .then(delayFun)
-//     .then(immdeiateFun1)
-//     .then(immdeiateFun2)
-//     .catch(err => console.error(err))
-//     .finally(() => console.log("Bye2!"))
