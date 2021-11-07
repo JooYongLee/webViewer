@@ -1,0 +1,16 @@
+ul li{
+    color:red
+}
+
+#lecture{
+    border: 1px solid red
+}
+
+#lecture >li{
+    color:green;
+    border: 1px solid red
+}
+
+ul, ol{
+    background-color: powderblue
+}

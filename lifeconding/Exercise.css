@@ -1,0 +1,24 @@
+.pixelfont{
+    font-size: 16px;
+    color:red;
+}
+
+.remfont{
+    font-size: 1rem;
+    color:green;
+}
+
+/* html{
+    color:red
+} */
+p, a{
+    border:10px red solid;
+    padding:20px;  
+    margin:40px;  
+    width:100px;
+    /* display:inline */
+}
+
+div{
+    border:1px solid blue
+}

@@ -1,0 +1,36 @@
+a:visited{
+    color:black
+} 
+
+a:hover{
+    color:yellow
+} 
+
+a:active{
+    color:red
+} 
+
+input:focus{
+    background-color:black;
+    color:white
+}
+
+.ab[title="abc"]{
+
+}
+
+.h1h1{
+    color:blue
+}
+
+.test-button{
+    
+    width: 100px;
+    height:200px;
+    background-image: "yuna.jpg";
+}
+
+/* a:focus{
+    color:white
+}
+ */
