@@ -1,0 +1,108 @@
+html{
+    font-size : 10px;
+    height : 100vh; */
+}
+
+*{
+    color:white ;
+    border: 1px solid white;
+    text-align: center;
+}
+
+body {
+    margin: 0px auto;
+    background: radial-gradient(at 50% 0%, #4F4F59, #030504);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Roboto', sans-serif;
+	font-family: arial;
+	padding: 0;
+	margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display:flex;
+}
+
+
+.myHolyGrail{
+    width: 100vw;
+    height: 100vh;
+    border: 5px solid red;
+    display: flex;
+    flex-direction: column;
+    /* flex-grow:1; */
+
+}
+
+#myHolyGrail{
+    color:aqua;
+    border: 5px solid aqua;
+
+}
+
+.myHolyGrail header{
+    flex-basis: 10vh;
+}
+
+.myHolyGrail .mainsection{
+    flex-grow: 1;
+}
+
+.myHolyGrail footer{
+    flex-basis: 10vh;
+}
+
+nav, aside{
+    flex-basis: 15vw;
+    flex-shrink: 0;
+    display:flex;
+    flex-direction: column;
+}
+
+nav div{
+    flex-grow: 1;
+
+}
+
+main{
+    flex-grow: 1;
+    display: hidden;
+}
+
+.mainsection{
+    display: flex;
+    /* flex-direction: row; */
+}
+
+.item{
+    background-color: tomato;
+    color: white;
+    border: 1px solid white;
+    flex-grow: 1;
+}
+
+h1{
+    color:white;
+}
+
+
+button{
+    background-color:green;
+}
+
+.toolbar {
+    display: flex;
+    flex-direction: column;
+    /* display: inline-block; */
+}
+
+.toolbar button{
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.olccusalButton{
+    background-image: url('./public/images/ready/occlusal-plane.png');
+
+}
