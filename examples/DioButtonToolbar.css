@@ -1,0 +1,15 @@
+
+.diobuttonToolbar{
+    /* position: fixed;
+    left:20vw;
+    top:20vh; */
+    /* width: 350px;
+    height: 260px; */
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px 0 #2f333e;
+    background-color: #0f1113;
+    /* opacity: 0.85; */
+    /* border: 2px solid salmon; */
+}

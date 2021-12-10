@@ -1,0 +1,65 @@
+.diobuttonSprite {
+	width: 200px;
+	height: 50px;
+	/* border: 1px solid red; */
+	/* margin: 5px; */
+
+	box-shadow: 0 1px 2px 0 #4f4f59;
+	background-color: #0f1113;
+	/* margin:2px; */
+	border: 2px solid #999;
+	border-color: transparent;
+	display: flex;
+	
+}
+
+.diobuttonSprite:hover {
+	border-radius: 2px;
+	box-shadow: 0 1px 2px 0 #030504;
+	border: solid 2px #5352ed;
+	background-color: #1c2128;
+	margin: 0px;
+}
+
+.diobuttonSprite label {
+	font-size: 2rem;
+	text-align: center;
+	height: 100%;
+	margin: 2px;
+	line-height: 200%;
+	flex-grow: 20;
+	display: inline-block;
+}
+
+
+.diobuttonSprite .buttonimage {
+	/* width: 186px;
+	height: 47px; */
+	/* display: block; */
+	/* background-size: 100% 100%; */
+
+	/* flex-grow: 0; */
+	/* object-fit: contain; */
+	
+	/* background: url("../images/temp/occlusal_plane.png") 0px -94px; */
+	
+	/* overflow: hidden; */
+	/* background-size: 50% 100%; */
+	transform-origin: top left;
+	
+	/* background-size: contain; */
+	/* transform: scale(2.5); */
+	
+	/* background-size: cover; */
+	/* background-image: ; */
+	
+	
+	/* object-fit: cover; */
+	/* border: 1px solid red; */
+	/* background-size: auto; */
+	/* padding: 5px; */
+	
+	/* background-color:; */
+	/* border: 1px solid black; */
+	/* border:black; */
+}
