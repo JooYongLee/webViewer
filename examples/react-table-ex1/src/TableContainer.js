@@ -8,6 +8,7 @@ import {
 } from 'react-table';
 import { Table, Row, Col, Button, Input, CustomInput } from 'reactstrap';
 import { Filter, DefaultColumnFilter } from './filters';
+import "./TableContainer.css"
 
 const TableContainer = ({ columns, data, renderRowSubComponent }) => {
   const {
@@ -52,9 +53,31 @@ const TableContainer = ({ columns, data, renderRowSubComponent }) => {
     gotoPage(page);
   };
 
+  console.log("[getTableProps]", getTableProps())
+  console.log("data", data)
+
+  // const onClickRow = (e) => {
+  //   console.log(this)
+  // }
+  const clickColor = "#5352ed"
+  let previousColor = ""
+  let previousTr = null
+
+  function onClickRow(e){
+    console.dir(e.target)
+    if( previousTr ){
+      previousTr.style.backgroundColor = previousColor
+    }
+    const parentTr = e.target.closest("tr")
+    console.log("selectd parent", parentTr)
+    previousColor = parentTr.style.backgroundColor 
+    parentTr.style.backgroundColor = clickColor
+    previousTr = parentTr
+  }
+  
   return (
     <Fragment>
-      <Table bordered hover {...getTableProps()}>
+      <Table bordered hover {...getTableProps()} >
         <thead>
           {headerGroups.map((headerGroup) => (
             <tr {...headerGroup.getHeaderGroupProps()}>
@@ -76,7 +99,7 @@ const TableContainer = ({ columns, data, renderRowSubComponent }) => {
             prepareRow(row);
             return (
               <Fragment key={row.getRowProps().key}>
-                <tr>
+                <tr onClick={onClickRow}>
                   {row.cells.map((cell) => {
                     return (
                       <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
@@ -144,7 +167,7 @@ const TableContainer = ({ columns, data, renderRowSubComponent }) => {
           </CustomInput>
         </Col>
         <Col md={3}>
-          <Button color='primary' onClick={nextPage} disabled={!canNextPage}>
+          <Button color='primary' onClick={nextPage} disabled={!canNextPage} >
             {'>'}
           </Button>
           <Button
