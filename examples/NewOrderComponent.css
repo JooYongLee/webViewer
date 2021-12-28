@@ -1,0 +1,298 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+    /* border: 1px solid red; */
+}
+
+
+/* Full-width input fields */
+.file-content{
+    display: flex;
+    position: relative;
+}
+
+.file-content svg{
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+    border: 2px solid gray;
+}
+
+.file-content svg:hover{
+    border: 2px solid #5352ed;
+}
+
+.file-content svg:active{
+    border: 2px solid #5352ed;
+    background-color: #5352ed;
+}
+
+
+/* .file-content svg{
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+} */
+
+
+
+input[type='text'],
+input[type='password'] {
+    padding: 0;
+
+
+}
+
+.contentinput{
+    display:flex;
+    flex-direction:column;
+    height:5%;
+}
+
+.contentinput>div, input{
+    flex-grow: 1;
+}
+
+
+.nake-input{
+    padding:0;
+    text-align: left;
+    color: #cfced1;
+
+    box-shadow: none;
+    background: transparent;
+    outline-style: none  ;
+    outline:none;
+    border: none;
+    border-bottom:2px solid #616161;
+    /* background-color: transparent; */
+}
+.wrap-input{
+    padding:0;
+    text-align: left;
+    color: #cfced1;
+
+    box-shadow: none;
+    background:  #2f333e;;
+    outline-style: none ;
+    outline:none;
+    /* border:1px solid red; */
+    border: none;
+    outline: none;
+}
+input[type='text']:focus{
+    outline:none;
+    /* border: 1px solid blue !important; */
+}
+
+.modal-content button{
+    margin: 0.1rem;
+    border-radius: 2px;
+    border: solid 2px #2f3542;
+    width: 10%;
+    color:#cfcfcf;
+    background-color:#161616;
+}
+    /* border: solid 2px #5352ed; */
+
+.modal-content button:hover{
+    border: solid 2px #5352ed;
+
+}
+
+.modal-content button:active{
+    border: solid 2px #5352ed;
+    background-color: #5352ed;
+
+}
+
+
+
+/* Set a style for all buttons */
+/* button {
+	background-color: #04aa6d;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+} */
+
+/* button:hover {
+	opacity: 0.8;
+} */
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+	position: relative;
+}
+
+img.avatar {
+	width: 40%;
+	border-radius: 50%;
+}
+
+.container {
+	padding: 16px;
+}
+
+span.psw {
+	float: right;
+	padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+	padding-top: 60px;
+    color: #cfcfcf;
+}
+
+/* Modal Content/Box */
+.modal-content {
+	/* background-color: #fefefe; */
+	margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+	/* border: 1px solid #888; */
+	width: 60%; /* Could be more or less, depending on screen size */
+    height: 70%;
+    display: flex;
+
+    opacity: 0.85;
+    /* border: transparent; */
+    border-radius: 2px;
+    background-color: #1c2128;
+}
+
+/* The Close Button (x) */
+.close {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: red;
+	cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s;
+}
+
+/*************************************************************/
+/*************************************************************/
+/*************************************************************/
+/* .modal-content>*{
+    flex-grow: 1;
+} */
+.modal-content header{
+    height: 5.5vh;
+}
+
+.modal-content footer{
+    height: 5.5vh;
+}
+
+.modal-content main{
+    height: 54vh;
+    /* width: 60vw; */
+    display: flex;
+}
+
+
+
+.modal-content main article{
+    flex-grow: 5;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.modal-content main article div{
+    flex-grow: 1;
+}
+
+.modal-content main nav{
+    flex-grow: 3;
+}
+
+.modal-content nav{
+    /* con */
+    position: relative;
+}
+
+.modal-content nav img{
+    content: url('/images/img_teethmap.png');
+    height: 80%;
+    object-fit: contain;
+    margin: 5% auto;
+    display: block;
+
+    /* text-align: center; */
+    /* max-width: 100%; */
+    /* display: inline; */
+
+}
+    /* con */
+
+
+/*************************************************************/
+/*************************************************************/
+/*************************************************************/
+
+
+@-webkit-keyframes animatezoom {
+	from {
+		-webkit-transform: scale(0);
+	}
+	to {
+		-webkit-transform: scale(1);
+	}
+}
+
+@keyframes animatezoom {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+	span.psw {
+		display: block;
+		float: none;
+	}
+	.cancelbtn {
+		width: 100%;
+	}
+}
