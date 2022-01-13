@@ -1,0 +1,22 @@
+.myviewer{
+
+}
+
+.toolbar {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    display: inline-block;
+    z-index: 1;
+}
+
+.toolbar button{
+    width: 150px;
+    height: 40px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.toolbar button:hover{
+    background-color: pink;
+}
